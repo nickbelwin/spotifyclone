@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top, #000000, #020202, #141414, #141414, #202020);
+}
+.navBlock{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 34px 0;
+}
+.logoName{
+    margin-left: 40px;
+}
+.main{
+    padding: 30px;
+}
+.page{
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    width: 46rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.page h1{
+    color: white;
+    letter-spacing: -2px;
+    font-size: 2.9rem;
+    font-family: var(--font-family,CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+    font-weight: 700;
+    padding: 75px 0 40px 0;
+    margin-right: 10px;
+}
+.page a{
+    border: 1px solid white;
+    width: 20rem;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.page ul{
+    list-style: none;
+    padding: 0;
+}
+.page a span{
+    font-weight: 600;
+    color: #c6c6c6;
+    margin: auto;
+}
+
+.apple i{
+    font-size: 24px;
+}
+
+.page .line{
+    height: 1px;
+    width: 70%; 
+    margin: 30px auto;
+    /* background-color: #363636; */
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-top: 1px solid rgb(45, 45, 45);
+}
+.input-data{
+    width: 20.2rem;
+}
+.input-data p{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.input-data input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(68, 67, 67);
+    border-radius: 5px;
+    background-color: #131313;
+    margin-bottom: 15px;
+}
+.input-data .rememberbox{
+    width: 4%;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.input-data .check-box{
+    display: flex;
+    align-items: center;
+}
+.input-data li span{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.login-button a{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 209, 80);
+    width: 20rem;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.login-button:hover{
+    transform: scale(1.1);
+}
+#forgot-password{
+    margin: 20px 0;
+    transform: .4s;
+}
+#forgot-password a:hover{
+    color: rgb(1, 185, 72);
+}
+#forgot-password a{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-decoration: underline;
+}
+.page .line2{
+    height: 1px;
+    width: 70%;
+    margin: auto;
+    padding: 30px 0 30px 0;
+    /* background-color: #363636; */
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-top: 1px solid rgb(45, 45, 45);
+}
+.signup-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 50px 0;
+}
+.signup-link span{
+    font-size: .9rem;
+    font-weight: 700;
+    color: #363636;
+}
+.signup-link a{
+    font-size: .9rem;
+    font-weight: 700;
+    text-decoration: underline;
+    border: none;
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    width: 19%;
+}
+.signup-link a:hover{
+    color: rgb(1, 185, 72);
+}
+@media screen and (max-width: 766px){
+    body{
+        background-image: none;
+        background-color: rgb(5, 5, 5);
+    }
+    .navBlock{
+        padding: 47px 0px 11px 0px;
+        margin: 0;
+    }
+    .navBlock img{
+        width: 80px;
+    }
+    .main{
+        padding: 30px;
+        background-color: #000000;
+    }
+    .page{
+        width: 100%;
+        margin: 0;
+        align-items: start;
+    }
+    .page h1{
+        padding:0;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .page ul{
+        width: 100%;
+    }
+    .page a{
+        width: 100%;
+    }
+    .page a .span{
+        margin: auto;
+    }
+    .login-button {
+        width: 100%;
+    }
+    .login-button a{
+        width: 100%;
+    }
+    #forgot-password{
+        width: 100%;
+    }
+    #forgot-password a{
+        width: fit-content;
+        margin: auto;
+    }
+    .signup-link{
+        padding: 0px 0 50px 0;
+        flex-direction: column;
+    }
+    .signup-link a{
+        width: fit-content;
+    }
+    .page .line{
+        width: 100%;
+    }
+    .line2{
+        display: none;
+    }
+}
