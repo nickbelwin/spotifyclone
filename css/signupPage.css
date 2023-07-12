@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 450px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 130px;
+}
+.logoContainer{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+.logoContainer a{
+    margin: auto;
+}
+.logoContainer img{
+    width: 130px;
+    padding: 40px 0;
+}
+.logoContainer h2{
+    color: black;
+    letter-spacing: -2px;
+    font-weight: 700;
+    font-size: 30px;
+    margin: auto;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.first-list{
+    list-style: none;
+    width: 100%;
+    display: flex;
+
+}
+.facebook a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 30px;
+    /* width: 25rem; */
+    background-color: rgb(77, 77, 159);
+    color: white;
+    padding: 11px 8px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700;
+    border: 2px solid rgb(77, 77, 159);
+}
+.facebook a img{
+    margin-right: 10px;
+}
+.google a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 30px;
+    /* width: 25rem; */
+    background-color: rgb(255, 255, 255);
+    color: rgb(101, 100, 100);
+    padding: 11px 8px;
+    margin-bottom: 24px;
+    border: 2px solid grey;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.google a img{
+    margin-right: 10px;
+}
+.facebook:hover, .google:hover{
+    transform: scale(1.02);
+}
+.linebox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.line{
+    width: 5rem;
+    height: 1px;
+    border: 1px solid rgb(148, 147, 147);
+}
+.linebox p{
+    color: rgb(148, 147, 147);
+    margin-bottom: 3px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.emailinfo, .passinfo, .nameinfo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.emailinfo label, .passinfo label, .nameinfo label, .birth label, .gender label{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+.emailinfo input, .passinfo input, .nameinfo input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.emailinfo a{
+    color: green;
+}
+.nameinfo p{
+    font-size: 14px;
+}
+.birthdate{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.year, .month, .date{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+}
+.year{
+    width: 25%;
+}
+.month{
+    width: 46%;
+}
+.date{
+    width: 20%;
+}
+.year input{
+    padding: 10px 0;
+    border-radius: 8px;
+    border: 1px solid black;
+    /* width: 30%; */
+}
+.month select{
+    padding: 10px 0;
+    border-radius: 8px;
+    border: 1px solid black;
+    /* width: 30%; */
+}
+.date input{
+    padding: 10px 0;
+    border-radius: 8px;
+    border: 1px solid black;
+    /* width: 30%; */
+}
+.gender{
+    margin-bottom: 20px;
+}
+.gendertype{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gendertype label{
+    margin-right: 30px;
+}
+.condition{
+    display: flex;
+    margin-bottom: 20px;
+}
+.condition input{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.condition input{
+    height: fit-content;
+    width: fit-content;
+}
+.condition label{
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+}
+.terms{
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+.terms p{
+    color: black;
+}
+.terms a{
+    color: green;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.button a{
+    background-color: rgb(105, 255, 105);
+    padding: 20px 40px;
+    border-radius: 30px; 
+    color: black;
+    font-weight: 700; 
+    text-decoration: none;
+}
+.login{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+.login p{
+    color: black;
+}
+.login a{
+    color: green;
+}
+@media screen and (max-width: 766px){
+    .logo{
+        width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .facebook{
+        width: 100%;
+    }
+    .google{
+        width: 100%;
+    }
+}
